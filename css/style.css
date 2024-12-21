@@ -1,0 +1,338 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-rectangle;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/z-anime-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #1a1a1a; /* Fallback color */
+    color: #fff;
+    line-height: 1.6;
+}
+/* Skills and Interests Sections */
+.skills-section,
+.interests-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.skills-section h3,
+.interests-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #16ebeb;
+}
+
+.skills-container,
+.interests-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.skill-item,
+.interest-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon,
+.interest-icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover,
+.interest-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item:hover .skill-icon,
+.interest-item:hover .interest-icon {
+    background-color: rgba(22, 235, 235, 0.2);
+    transform: rotate(360deg);
+}
+
+.skill-item span,
+.interest-item span {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* Animation for icons */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill-item,
+.interest-item {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+/* Stagger the animations */
+.skill-item:nth-child(1) { animation-delay: 0.1s; }
+.skill-item:nth-child(2) { animation-delay: 0.2s; }
+.skill-item:nth-child(3) { animation-delay: 0.3s; }
+.skill-item:nth-child(4) { animation-delay: 0.4s; }
+
+.interest-item:nth-child(1) { animation-delay: 0.5s; }
+.interest-item:nth-child(2) { animation-delay: 0.6s; }
+.interest-item:nth-child(3) { animation-delay: 0.7s; }
+
+/* Main header styling */
+header.hero {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark overlay for readability */
+    color: #fff;
+    padding: 50px 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Navigation icons */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-icon {
+    font-size: 2.5rem;
+    /* Icon size */
+    color: #ffffff;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-icon:hover {
+    color: #16ebeb;
+    transform: scale(1.2);
+}
+
+/* Sections styling */
+.section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: rgba(0, 2, 3, 0.6);
+    /* Semi-transparent section background */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Fade-in animation */
+.fade-in {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Profile photo styling */
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Social links list */
+.social-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-list li {
+    margin: 10px 0;
+}
+
+.social-list a {
+    color: #00a2ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-list a:hover {
+    color: #16ebeb;
+}
+
+/* GitHub Section styling */
+.github-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+
+.github-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Project Section styling */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-item {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #fff;
+}
+
+.project-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.project-screenshot {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-item a {
+    display: inline-block;
+    text-decoration: none;
+    color: #00a2ff;
+    font-weight: 500;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+    margin-top: auto;
+}
+
+.project-item a:hover {
+    color: #16ebeb;
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #16ebeb;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 0.9rem;
+}

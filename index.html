@@ -1,0 +1,134 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephen Carl Cagampang - ePortfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- FontAwesome for icons -->
+</head>
+<body>
+  <!-- Main Header Section -->
+  <header class="hero">
+    <h1>Welcome to My ePortfolio</h1>
+    <p>Hi, I'm Stephen Carl Cagampang, a 3rd-year college student from USTP. Explore my projects and connect with me!</p>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about"><i class="fas fa-user-circle nav-icon" title="About Me"></i></a></li>
+        <li><a href="#github"><i class="fab fa-github nav-icon" title="GitHub"></i></a></li>
+        <li><a href="#projects"><i class="fas fa-project-diagram nav-icon" title="Projects"></i></a></li>
+        <li><a href="#contact"><i class="fas fa-envelope nav-icon" title="Contact Me"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <div class="intro">
+        <img src="images/y-face profile.jpg" alt="Stephen's Profile Photo" class="profile-photo">
+        <p>
+            Hi, I'm Stephen Carl Cagampang, a passionate 3rd-year student at USTP. I specialize innovative projects that blend creativity with functionality.
+        </p>
+        
+        <div class="skills-section">
+            <h3>Programming Languages</h3>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <img src="images/python-icon.png" alt="Python" class="skill-icon">
+                    <span>Python</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/c++-icon.png" alt="C++" class="skill-icon">
+                    <span>C++</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/html-icon.png" alt="HTML" class="skill-icon">
+                    <span>HTML</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/java-icon.png" alt="Java" class="skill-icon">
+                    <span>Java</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="interests-section">
+            <h3>Interests</h3>
+            <div class="interests-container">
+                <div class="interest-item">
+                    <img src="images/grass-icon.png" alt="Things" class="interest-icon">
+                    <span>Doing different things</span>
+                </div>
+                <div class="interest-item">
+                    <img src="images/valorant-game-icon.jpg" alt="Gaming" class="interest-icon">
+                    <span>Gaming</span>
+                </div>
+                <div class="interest-item">
+                    <img src="images/esports-icon.png" alt="Esports" class="interest-icon">
+                    <span>Esports</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- GitHub Section -->
+  <section id="github" class="section fade-in">
+    <h2>My GitHub</h2>
+    <div class="github-section">
+      <a href="https://github.com/Stephn-prog" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/189703142?v=4" alt="GitHub Icon" class="github-icon">
+      </a>
+      <p>Explore my repositories and idk do whatever you want</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="project-list">
+        <div class="project-item">
+            <h3>CFG Parsing Using LL1 algorithm</h3>
+            <img src="images/Parsing-test2.png" alt="Portfolio Screenshot" class="project-screenshot">
+            <p>A responsive CFG parser maker that can determine the left derivations of CFG rule production using LL1 and Parsing.</p>
+            <a href="https://github.com/Chxrls/CFG-Parser.git" target="_blank">View on GitHub</a>
+        </div>
+        
+        <div class="project-item">
+            <h3>Visual Novel App "Borrowed Moments"</h3>
+            <img src="images/nokotech-screenshot-test.png" alt="Task Manager Screenshot" class="project-screenshot">
+            <p>An intuitive task management application developed using React and Node.js. Includes features like task categorization and deadline tracking.</p>
+            <a href="https://github.com/yhakhuyars/SoftEngProject.git" target="_blank">View on GitHub</a>
+        </div>
+        
+        <div class="project-item">
+            <h3>Chess</h3>
+            <img src="images/work-in-progress.png" alt="Weather Dashboard Screenshot" class="project-screenshot">
+            <p>A real-time weather application using OpenWeatherMap API and JavaScript. Provides detailed weather forecasts and interactive maps.</p>
+            <a href="https://github.com/Stephn-prog/chess" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section fade-in">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mannweyv" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Stephen Carl Cagampang. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
